@@ -787,13 +787,15 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 528px;
+  min-height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--primary-cubic);
-
-  min-width: 528px;
-  min-height: 581px;
-
-  padding: 40px 39px 40px 41px;
 
   background-color: var(--color-white);
 }
@@ -825,13 +827,14 @@ img {
 /* close-icon */
 
 .modal-title {
-  display: inline-block;
+  display: block;
   margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  /* text-align: center; */
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--sec-fontcolor);
 }
 
@@ -910,8 +913,15 @@ img {
 }
 
 .agreement {
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   margin-bottom: 30px;
-  margin-left: 25px;
 }
 
 .agreement-title {
